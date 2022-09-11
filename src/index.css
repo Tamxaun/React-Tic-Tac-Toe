@@ -37,6 +37,10 @@ ul {
   width: 34px;
 }
 
+.square.is-winner {
+  background-color: gold;
+}
+
 .square:focus {
   outline: none;
 }
