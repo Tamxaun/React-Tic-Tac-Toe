@@ -52,7 +52,6 @@ class Game extends React.Component {
           squares: Array(9).fill(null),
           col: null,
           row: null,
-          isWinner: false,
         },
       ],
       stepNumber: 0,
@@ -119,8 +118,6 @@ class Game extends React.Component {
     const winner = calculateWinner(current.squares);
 
     console.log(winner);
-
-    console.log("current.squares:", current.squares);
 
     const moves = history.map(({ col, row }, move) => {
       const desc = move
